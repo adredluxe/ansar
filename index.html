@@ -4,28 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ansar Market</title>
+    <title>Ansar Market — Ваш магазин рядом</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header>
-        <h1>ANSAR MARKET</h1>
-        <p>Ваш магазин рядом</p>
+        <h1>АНСАР</h1>
+        <nav>
+            <a href="#catalog">Каталог</a>
+            <a href="#about">О магазине</a>
+            <span>🛒 Корзина: <span id="cart-count">0</span></span>
+        </nav>
     </header>
 
     <main>
         <section class="hero">
-            <h2>Добро пожаловать в Ansar!</h2>
-            <p>Покупайте продукты на каждый день.</p>
+            <h2>Добро пожаловать в АНСАР!</h2>
+            <p>Всё необходимое рядом с домом.</p>
             <a href="#catalog">Перейти в каталог</a>
         </section>
 
-        <section id="catalog">
+        <section class="container" id="catalog">
             <h2>Наши товары</h2>
-            <div id="products"></div>
+            <div class="products" id="products"></div>
+            <h3>Итого: <span id="cart-total">0 ₸</span></h3>
+        </section>
+
+        <section class="container" id="about">
+            <h2>О нашем магазине</h2>
+            <p>АНСАР — небольшой магазин у дома, где можно найти всё необходимое на каждый день.</p>
         </section>
     </main>
+
+    <footer>
+        <p>© 2026 Ansar Market</p>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
